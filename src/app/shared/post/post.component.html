@@ -1,0 +1,23 @@
+<div class="full-frame">
+
+    <div class="image-section">
+      <img [src]="defaultImage">
+    </div>
+  
+    <div class="text-section">
+      <div class="text-section-row row0">
+        <span>{{imageData.name}}</span>
+      </div>
+      
+      <div *ngIf="imageData.creationDate" class="text-section-row row1">
+        <span>Posted on: {{imageData.creationDate | date: 'MM/dd/yy'}}</span>
+      </div>
+  
+      <div *ngIf="imageData.uploadedBy && displayPostedBy" class="text-section-row row2">
+        <span>Posted by: {{imageData.uploadedBy.name}} </span>
+      </div>
+  
+  
+    </div>
+  
+  </div>
