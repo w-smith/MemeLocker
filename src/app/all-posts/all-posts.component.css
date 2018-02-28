@@ -8,3 +8,13 @@
 app-post {
     margin: 10px;
 }
+
+btn-primary {
+    margin: 10vh auto;
+    
+}
+
+.buttondiv {
+    margin: 5vh auto;
+    text-align: center;
+}
